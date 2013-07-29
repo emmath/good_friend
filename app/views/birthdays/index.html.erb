@@ -1,0 +1,35 @@
+<h1>It's Birthday time!</h1>
+<h2>Welcome the the Good Friend App! Use this app to keep track of when your friends' birthdays are and what you should do for them!</h2>
+<br>
+<h2>Ready to get started???</h2>
+<h2>1. Add some friends:</h2>
+<%= link_to "New Friend", :friends %>
+<h2>2. Add some favorites:</h2>
+<%= link_to "New Favorite", :favorites %>
+<h2>3. Now match friends to favorites and make a birthday!</h2>
+<%= link_to 'New Birthday', new_birthday_path %>
+<br>
+<br>
+<h2>Birthdays you have added!</h2>
+<table>
+  <tr>
+    <th>Friend</th>
+    <th>Favorite</th>
+    <th>Date</th>
+  </tr>
+
+<% @birthdays.each do |birthday| %>
+  <tr>
+    <td><%= birthday.friend.name %></td>
+    <td><%= birthday.favorite.thing %></td>
+    <td><%= birthday.date %></td>
+    <td><%= link_to 'Show', birthday %></td>
+    <td><%= link_to 'Edit', edit_birthday_path(birthday) %></td>
+    <td><%= link_to 'Destroy', birthday, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

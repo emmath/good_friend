@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature 'Creating Friends' do
   before do
-    visit '/'
+    visit '/friends'
     click_link 'New Friend'
   end
 

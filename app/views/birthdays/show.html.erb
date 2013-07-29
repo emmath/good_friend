@@ -1,0 +1,23 @@
+<% title(@birthday.nickname, "Birthdays") %>
+<h2><%= @birthday.nickname %></h2>
+
+<p>
+  <b>Friend:</b>
+  <%= @birthday.friend.name %>
+</p>
+
+<p>
+  <b>Favorite:</b>
+  <%= @birthday.favorite.thing %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @birthday.date %>
+</p>
+
+<%= link_to "View all Birthdays", birthdays_path %>
+<%= link_to "Edit Birthday", edit_birthday_path(@birthday) %>
+<%= link_to "Delete Birthday", birthday_path(@birthday),
+            method: :delete,
+            confirm: "Are you SURE you want to delete this birthday? Thats serious." %>
