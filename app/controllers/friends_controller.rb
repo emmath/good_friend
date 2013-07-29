@@ -37,4 +37,11 @@ class FriendsController < ApplicationController
       render action: "edit"
     end
   end
+
+  def destroy
+    @friend = Friend.find(params[:id])
+    @friend.destroy
+    flash[:notice] = "Friend has been deleted."
+    redirect_to friends_path
+  end
 end
