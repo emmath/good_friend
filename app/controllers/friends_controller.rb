@@ -13,6 +13,8 @@ class FriendsController < ApplicationController
       flash[:notice] = "Friend has been created."
       redirect_to @friend
     else
+      flash[:alert] = "Friend has not been created."
+      render action: "new"
     end
   end
 
