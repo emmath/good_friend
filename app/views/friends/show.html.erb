@@ -1,2 +1,4 @@
 <% title(@friend.name, "Friends") %>
 <h2><%= @friend.name %></h2>
+
+<%= link_to "Edit Friend", edit_friend_path(@friend) %>

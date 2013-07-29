@@ -22,4 +22,19 @@ class FriendsController < ApplicationController
   def show
     @friend = Friend.find(params[:id])
   end
+
+  def edit
+    @friend = Friend.find(params[:id])
+  end
+
+  def update
+    @friend = Friend.find(params[:id])
+    if @friend.update_attributes(params[:friend])
+      flash[:notice] = "Friend has been updated."
+      redirect_to @friend
+    else
+      flash[:alert] = "Friend has not been updated."
+      render action: "edit"
+    end
+  end
 end
