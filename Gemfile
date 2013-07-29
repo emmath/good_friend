@@ -31,6 +31,8 @@ group :test do
   gem 'factory_girl', '2.6.4'
 end
 
+#gem 'devise', '2.1.0'
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

@@ -1,0 +1,7 @@
+<% title(@favorite.thing, "Favorites") %>
+<h2><%= @favorite.thing %></h2>
+
+<%= link_to "Edit Favorite", edit_favorite_path(@favorite) %>
+<%= link_to "Delete Favorite", favorite_path(@favorite),
+            method: :delete,
+            confirm: "Are you SURE you want to delete this favorite?" %>

@@ -1,0 +1,8 @@
+<%= form_for(@favorite) do |f| %>
+<%= f.error_messages %>
+  <p>
+    <%= f.label :thing %><br>
+    <%= f.text_field :thing %>
+  </p>
+  <%= f.submit %>
+<% end %>

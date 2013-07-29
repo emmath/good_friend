@@ -1,0 +1,7 @@
+<h2>Favorites</h2>
+<ul>
+  <% @favorites.each do |favorite| %>
+    <li><%= link_to favorite.thing, favorite %></li>
+  <% end %>
+</ul>
+<%= link_to "New Favorite", new_favorite_path %>
