@@ -8,5 +8,10 @@ feature 'Creating Friends' do
     fill_in 'Description', with: 'Best Friend'
     click_button 'Create Friend'
     page.should have_content("Friend has been created.")
+
+    friend = Friend.find_by_name("Marlena")
+    page.current_url.should == friend_url(friend)
+    title = "Marlena - Friends - Good Friend"
+    find("title").should have_content(title)
   end
 end
