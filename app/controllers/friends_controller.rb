@@ -1,4 +1,8 @@
 class FriendsController < ApplicationController
+before_filter :find_friend, :only => [:show,
+                                       :edit,
+                                       :update,
+                                       :destroy]
 
   def index
     @friends = Friend.all
@@ -42,6 +46,14 @@ class FriendsController < ApplicationController
     @friend = Friend.find(params[:id])
     @friend.destroy
     flash[:notice] = "Friend has been deleted."
+    redirect_to friends_path
+  end
+
+private
+  def find_friend
+    @friend = Friend.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "The friend you were looking for could not be found."
     redirect_to friends_path
   end
 end
