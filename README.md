@@ -13,4 +13,4 @@ How to use it?
 and presto! you are back in control and you will look pretty considerate, too. Go forth and be a good friend!
 
 
-lib/assets/birthdayapp.tiff
+![ScreenShot](lib/assets/birthdayapp.tiff)
