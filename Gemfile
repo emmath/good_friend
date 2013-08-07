@@ -7,8 +7,6 @@ gem 'dynamic_form', '1.1.4'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +22,7 @@ end
 
 group :test, :development do
   gem 'rspec-rails', '~>2.11'
+  gem 'sqlite3'
 end
 
 group :test do
