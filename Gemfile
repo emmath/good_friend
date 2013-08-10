@@ -4,6 +4,8 @@ gem 'rails', '3.2.13'
 
 gem 'dynamic_form', '1.1.4'
 
+gem 'unicorn'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -37,6 +39,8 @@ end
 #gem 'devise', '2.1.0'
 
 gem 'jquery-rails'
+
+gem 'simple_form'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

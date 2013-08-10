@@ -1,26 +1,7 @@
-<%= form_for(@birthday) do |f| %>
-  <%= f.error_messages %>
+<%= simple_form_for(@birthday) do |f| %>
+  <%= f.association :friend %>
+  <%= f.association :favorite %>
+  <%= f.input :date %>
+  <%= f.button :submit %>
 
-
-
-  <div class="field">
-    <%= f.label :friend %>
-    <%= f.collection_select :friend_id, Friend.find(:all),
-                            :id, :name, prompt: "Choose a Friend!" %> <br>
-  </div>
-
-  <div class="field">
-    <%= f.label :favorite %>
-    <%= f.collection_select :favorite_id, Favorite.find(:all),
-                            :id, :thing, prompt: "Choose a Favorite!" %> <br>
-  </div>
-
-  <div class="field">
-  <%= f.label :date %><br>
-  <%= f.datetime_select :date %>
-</div>
-
-<div class="actions">
-  <%= f.submit %>
-</div>
 <% end %>
