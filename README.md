@@ -13,4 +13,4 @@ How to use it?
 and presto! you are back in control and you will look pretty considerate, too. Go forth and be a good friend!
 
 
-![ScreenShot](lib/assets/birthdayapp.png)
+![ScreenShot](/lib/assets/birthdayapp.png)
