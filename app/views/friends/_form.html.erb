@@ -1,5 +1,7 @@
 <%= simple_form_for(@friend) do |f| %>
+  <%= f.error_notification %>
   <%= f.input :name %>
   <%= f.input :description %>
+  <%= f.error :base %>
   <%= f.button :submit %>
 <% end %>

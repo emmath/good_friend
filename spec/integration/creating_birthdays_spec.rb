@@ -9,9 +9,8 @@ feature 'Creating Birthdays' do
   end
 
   scenario "can create a valid birthday" do
-    fill_in 'Nickname', with: 'Aubergine'
-    page.select(@friend.name, from: "birthday_friend_id")
-    page.select(@favorite.thing, from: "birthday_favorite_id")
+    page.select(@friend.name, from: "birthday_friend")
+    page.select(@favorite.thing, from: "birthday_favorite")
     click_button 'Create Birthday'
     page.should have_content("Friend has been created.")
 

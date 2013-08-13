@@ -13,7 +13,7 @@
 
 <p>
   <b>Date:</b>
-  <%= @birthday.date %>
+  <%= @birthday.date.strftime("Born on %B %e %Y") %>
 </p>
 
 <%= link_to "View all Birthdays", birthdays_path %>

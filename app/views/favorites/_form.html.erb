@@ -1,4 +1,6 @@
 <%= simple_form_for(@favorite) do |f| %>
+  <%= f.error_notification %>
   <%= f.input :thing %>
+  <%= f.error :base %>
   <%= f.button :submit %>
 <% end %>

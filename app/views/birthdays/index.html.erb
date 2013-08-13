@@ -23,7 +23,7 @@
   <tr>
     <td><%= birthday.friend.name %></td>
     <td><%= birthday.favorite.thing %></td>
-    <td><%= birthday.date %></td>
+    <td><%= birthday.date.strftime("Birthday coming up on %B %e !") %></td>
     <td><%= link_to 'Show', birthday %></td>
     <td><%= link_to 'Edit', edit_birthday_path(birthday) %></td>
     <td><%= link_to 'Destroy', birthday, method: :delete, data: { confirm: 'Are you sure?' } %></td>

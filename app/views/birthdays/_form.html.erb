@@ -1,7 +1,9 @@
 <%= simple_form_for(@birthday) do |f| %>
-  <%= f.association :friend %>
-  <%= f.association :favorite %>
+  <%= f.error_notification %>
+  <%= f.association :friend, label: "Choose a friend!" %>
+  <%= f.association :favorite, label: "Choose a favorite!" %>
   <%= f.input :date %>
+  <%= f.error :base %>
   <%= f.button :submit %>
 
 <% end %>
