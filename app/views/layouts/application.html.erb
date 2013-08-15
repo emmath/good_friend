@@ -20,6 +20,9 @@
     <% else %>
       <%= link_to "Sign in with Twitter", "/auth/twitter" %>
     <% end %>
+    Language:
+    <%= link_to_unless_current "English", locale: "en" %>
+    <%= link_to_unless_current "Deutsch", locale: "de" %>
   </div>
   <% flash.each do |key, value| %>
   <div class='flash' id='<%= key %>'>

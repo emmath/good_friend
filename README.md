@@ -12,5 +12,11 @@ How to use it?
 
 and presto! you are back in control and you will look pretty considerate, too. Go forth and be a good friend!
 
-
+Here's how it looks, with Twitter Oauth:
 ![ScreenShot](https://raw.github.com/emmath/good_friend/master/lib/assets/Good_Friend.png)
+
+Here it is with German I18n and Strftime:
+![ScreenShot](https://raw.github.com/emmath/good_friend/master/lib/assets/deutsch.png)
+
+Check it out! Simpleform!
+![ScreenShot](https://raw.github.com/emmath/good_friend/master/lib/assets/simpleform.png)

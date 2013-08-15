@@ -2,4 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  birthdays:
+    index:
+      title: "It's Birthday time!"
+      about: "Welcome, good friend, to the the Good Friend App. Use this app to keep track of when your friends' birthdays are and what you should do for them! Be a good friend."
