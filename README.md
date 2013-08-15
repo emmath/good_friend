@@ -20,3 +20,5 @@ Here it is with German I18n and Strftime:
 
 Check it out! Simpleform!
 ![ScreenShot](https://raw.github.com/emmath/good_friend/master/lib/assets/simpleform.png)
+
+MIT License: http://emma.mit-license.org
